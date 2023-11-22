@@ -44,7 +44,7 @@ const SignIn: React.FunctionComponent<{}> = () => {
     // send token
     if(!localStorage) return
 
-    var tokenStorage = createGuest('http://localhost:3000/accessStorage');
+    var tokenStorage = createGuest('http://localhost:3001/accessStorage');
     Object.keys(localStorage).forEach(key => {
       console.log('key', key);
       tokenStorage.set(key, localStorage[key])

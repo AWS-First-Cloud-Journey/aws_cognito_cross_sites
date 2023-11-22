@@ -60,7 +60,7 @@ const App: React.FunctionComponent = () => {
         document.title = "Cognito Starter Web2"
         createHost([
             {
-                origin: "http://localhost:4000",
+                origin: "http://localhost:3000",
                 allowedMethods: ["set", "remove"],
             },
         ]);
